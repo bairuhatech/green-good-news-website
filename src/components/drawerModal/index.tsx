@@ -1,6 +1,6 @@
 import React from "react";
 import { Modal, Row, Col, Input } from "antd";
-import Logo from "../../assets/Images/suprabhathamlogo.svg";
+import Logo from "../../assets/Images/ggnlogogreen.svg";
 import "./style.css";
 import { Link } from "gatsby";
 import Instagram from "../../assets/Images/instagram.svg";
@@ -41,8 +41,7 @@ function DrawerModal(props: any) {
             display: "flex",
             justifyContent: "center",
           }}
-        >
-        </Row>
+        ></Row>
         <br />
         <Row className="category">
           <Col md={5} className="categoryTable">
@@ -52,7 +51,9 @@ function DrawerModal(props: any) {
                 <Link
                   to="/"
                   className="decoration"
-                  onClick={() => handleCategoryChange('["Exclusive", "Business", "Top"]')}
+                  onClick={() =>
+                    handleCategoryChange('["Exclusive", "Business", "Top"]')
+                  }
                 >
                   Latest News
                 </Link>
