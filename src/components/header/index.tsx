@@ -231,19 +231,19 @@ const Header = (props: any) => {
                     />
                   </div>
                 </Col>
-               
+
                 <Col md={16} className="d-none d-md-block">
                   <div className="header-dateDiv">
-                    <div className="dateTime1 me-2">{date.format('DD')}</div>
+                    <div className="dateTime1 me-2">{date.format("DD")}</div>
                     <div className="dateTime2">
-                      {date.format('dddd')}
+                      {date.format("dddd")}
                       <div className="dateTime3">
-                        {currentTime.toLocaleString('en-in', {
-                          month: 'short',
-                          year: 'numeric',
-                          hour: 'numeric',
-                          minute: 'numeric',
-                          second: 'numeric',
+                        {currentTime.toLocaleString("en-in", {
+                          month: "short",
+                          year: "numeric",
+                          hour: "numeric",
+                          minute: "numeric",
+                          second: "numeric",
                           hour12: true,
                         })}
                       </div>
@@ -265,13 +265,13 @@ const Header = (props: any) => {
                   style={{ height: "80px" }}
                 >
                   <>
-                    <Col>
+                    {/* <Col>
                       <div className="d-none d-md-block">
                         <Link to="https://www.youtube.com/@Suprabhaatham2023">
                           <Live style={{ width: "40px", height: "32px" }} />
                         </Link>
                       </div>
-                    </Col>
+                    </Col> */}
                     <Col>
                       <div className="d-none d-md-block">
                         <Link to="https://twitter.com/suprabhaatham?lang=en">
@@ -281,30 +281,29 @@ const Header = (props: any) => {
                     </Col>
                     <Col>
                       <div className="d-none d-md-block">
-                        <Link to="https://www.facebook.com/Suprabhaatham/">
-                          <Facebook style={{ width: "20px", height: "20px" }} />
-                        </Link>
+                        <Link
+                         to="https://www.facebook.com/profile.php?id=61551093117515&mibextid=ZbWKwL"> 
+                         <Facebook style={{ width: "20px", height: "20px" }} />
+                  </Link>
                       </div>
                     </Col>
                     <Col md={4} className="d-none d-lg-block">
-                {
-                    user  != null? (
-                      <div
-                      className="contactHeader "
-                      onClick={() => handleProfileClick()}
-                    >
-                      <Contact />
-                    </div>
-                    ):(
-                      <div
-                    className="contactHeader "
-                    onClick={() => handleLoginClick()}
-                  >
-                    <Contact />
-                  </div>
-                    )
-                  }
-                </Col>
+                      {/* {user != null ? (
+                        <div
+                          className="contactHeader "
+                          onClick={() => handleProfileClick()}
+                        >
+                          <Contact />
+                        </div>
+                      ) : (
+                        <div
+                          className="contactHeader "
+                          onClick={() => handleLoginClick()}
+                        >
+                          <Contact />
+                        </div>
+                      )} */}
+                    </Col>
                     <Col
                       onClick={() => setSearch(!search)}
                       className={search ? "" : "d-none"}
@@ -326,29 +325,31 @@ const Header = (props: any) => {
               <>
                 <Col md={8} lg={7} className="d-flex searchInputContainer">
                   <Form onFinish={handleSearch} style={{ display: "flex" }}>
-                    <Form.Item name="searchInput"
+                    <Form.Item
+                      name="searchInput"
                       rules={[
                         {
                           required: true,
                           message: "Please type any word!",
                         },
                       ]}
-                      className="searchInput" >
+                      className="searchInput"
+                    >
                       <Input
                         className="searchInput"
                         placeholder="Search news"
                       />
                     </Form.Item>
-                    <Form.Item >
-                      <Button
-                        className="searchButton"
-                        htmlType="submit"
-                      >
+                    <Form.Item>
+                      <Button className="searchButton" htmlType="submit">
                         <BiSearch size={23} color="#fff" />
                       </Button>
                     </Form.Item>
                     <Form.Item>
-                      <div style={{ marginLeft: 15 }} onClick={() => setSearch(true)}>
+                      <div
+                        style={{ marginLeft: 15 }}
+                        onClick={() => setSearch(true)}
+                      >
                         <RxCross2 size={20} cursor="pointer" />
                       </div>
                     </Form.Item>
@@ -360,8 +361,8 @@ const Header = (props: any) => {
           </Row>
           {/* ////////DRAWER STARTS/////////// */}
           {show ? (
-           <DrawerModal visible={show} close={()=>setShow(false)}/>
-          ) :null}
+            <DrawerModal visible={show} close={() => setShow(false)} />
+          ) : null}
         </Col>
       </Row>
       <SubHeader />
