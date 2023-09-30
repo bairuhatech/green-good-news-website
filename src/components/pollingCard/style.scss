@@ -1,0 +1,84 @@
+.pollingCard-Col1 {
+  height: 100%;
+  padding: 24px 10px;
+  border-radius: 8px;
+  box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px,
+    rgba(17, 17, 26, 0.1) 0px 0px 8px;
+}
+
+.pollingCad-Txt1 {
+  font-family: "Noto_Sans_Bold_700" !important;
+  font-size: 17px;
+  text-align: center;
+  padding-bottom: 20px;
+}
+.pollingCard-Col2 {
+  height: 40px;
+  width: 100%;
+  cursor: pointer;
+  border-radius: 6px;
+  box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em,
+    rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+  display: grid;
+  width: 100%;
+  place-items: center;
+  font-family: "Noto_Sans_SemiBold_600" !important;
+  font-size: 14px;
+}
+
+.pollingCard-Txt2 {
+  position: absolute;
+  z-index: 99;
+  font-family: "Noto_Sans_SemiBold_600" !important;
+  font-size: 14px;
+}
+.ant-progress-bg {
+  height: 34px !important;
+}
+:where(.css-dev-only-do-not-override-k7429z).ant-progress .ant-progress-inner {
+  background-color: transparent !important;
+  vertical-align: baseline !important;
+  border-radius: 0px !important;
+  padding-top: 3px !important;
+}
+:where(.css-dev-only-do-not-override-k7429z).ant-progress .ant-progress-bg {
+  height: 34px !important;
+  border-radius: 4px !important;
+}
+.ant-progress-outer {
+  height: 0px !important;
+}
+:where(.css-dev-only-do-not-override-k7429z).ant-progress-line {
+  position: relative !important;
+}
+:where(.css-1jr9qlj).ant-progress .ant-progress-inner {
+  vertical-align: baseline !important;
+  background-color: transparent !important;
+  border-radius: 4px !important;
+  // margin-top: 3px !important;
+}
+:where(.css-1jr9qlj).ant-progress .ant-progress-bg {
+  border-radius: 4px !important;
+}
+//////FOR LIVE /////
+
+:where(.css-txh9fw).ant-progress .ant-progress-inner {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  overflow: hidden;
+  background-color: transparent !important;
+  vertical-align: bottom !important;
+  border-radius: 6px !important;
+  // margin: 3px !important;
+}
+:where(.css-txh9fw).ant-progress .ant-progress-success-bg,
+:where(.css-txh9fw).ant-progress .ant-progress-bg {
+  position: relative;
+  background-color: #1677ff;
+  border-radius: 0px !important;
+  transition: all 0.3s cubic-bezier(0.78, 0.14, 0.15, 0.86);
+}
+:where(.css-dev-only-do-not-override-fpg3f5).ant-progress .ant-progress-inner {
+
+}

@@ -1,0 +1,98 @@
+.storiesSection-scrollBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.storiesSection-scroll {
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+  overflow-y: hidden;
+  white-space: nowrap;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.storiesSection-scroll::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+}
+
+.storiesSection-scroll::-webkit-scrollbar-thumb {
+  background-color: gray;
+  border-radius: 9px;
+}
+
+.storiesSection-scrollbutton1 {
+  height: 45px;
+  width: 45px;
+  border-radius: 100%;
+  position: absolute;
+  // position: relative;
+  left: 18px;
+  font-size: 30px;
+  // background-color: #e7e1e1;
+  background-color: black;
+  border: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 7px;
+}
+
+.storiesSection-scrollbutton2 {
+  height: 45px;
+  width: 45px;
+  border-radius: 100%;
+  position: absolute;
+  // position: relative;
+  right: 30px;
+  font-size: 50px;
+  // background-color: #e7e1e1;
+  background-color: black;
+  border: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 7px;
+}
+
+.storiesSection-item {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 16px;
+  margin-bottom: 5px;
+  padding-bottom: 10px;
+  padding: 13px;
+}
+
+.storiesSection-VideoCard {
+  width: 320px;
+  height: 220px;
+  background: #f3f3f3 0% 0% no-repeat padding-box;
+  border-radius: 8px;
+  opacity: 1;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+}
+@media screen and (max-width: "576px") {
+  .storiesSection-scrollbutton1 {
+    display: none !important;
+  }
+  .storiesSection-scrollbutton2 {
+    display: none !important;
+  }
+  .storiesSection-item {
+    padding: 12px !important;
+  }
+}
+@media screen and (min-width: "576px") and (max-width: "991px") {
+  .storiesSection-scrollbutton1 {
+    display: none !important;
+  }
+  .storiesSection-scrollbutton2 {
+    display: none !important;
+  }
+}

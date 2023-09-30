@@ -1,0 +1,107 @@
+.DrawerheaderLogo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+.DrawersuprabhathamLogo {
+    width: 200px !important;
+    height: 40px;
+  }
+.drawerCanvas{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    width: 100%;
+    /* max-height: 100vh; */
+    /* overflow: scroll; */
+}
+.category{
+    background-color:#f7f7f7 ;
+    border-radius: 5px;
+    width: 100%;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+}
+.categoryTable{
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+}
+.categoryTableHead{
+    font-size: 14px;
+    font-weight: 700;
+    color: black;
+    margin-bottom: 5px;
+}
+.listing{
+    list-style: none;
+    padding-left: 0;
+    color: #666;
+    font-weight: 400;
+    
+}
+.decoration{
+    text-decoration: none;
+    color: #666;
+}
+.decorationhead{
+    text-decoration: none;
+    color: black;
+}
+
+.copyright{
+    margin-top: 15px;
+    font-size: 10px;
+    font-weight: 600;
+    color: black; 
+    width: 100%;    
+    display: flex;
+    /* background-color: black; */
+    justify-content: center;
+}
+.disanceIcon{
+   margin-right: 25px;
+}
+.DrawercategoryDrawerlink a {
+    text-decoration: none;
+    color: black;
+    font-weight: 400;
+    font-size: 12px;
+ }
+ .logoCol{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ }
+ .inputDrawer{
+    width: 40%;
+ }
+ .drawerEdition{
+    width: 100%;
+    margin-bottom: 8px;
+ }
+ .maincat{
+    background-color:#f7f7f7 ;
+    width: 100%;
+    border-radius: 5px;
+ }
+ .DrawerprivacyPolicyTxt {
+    font-family: "Noto_Sans_Regular_400";
+    font-size: 12px;
+    border-right: 2px solid #c3c3c3;
+    cursor: pointer;
+  }
+  .DrawerprivacyPolicyTxt3{
+    font-family: "Noto_Sans_Regular_400";
+    font-size: 12px;
+    cursor: pointer;
+  }
+  @media screen and (max-width: 576px) {
+    .inputDrawer{
+        width: 100% !important;
+     }
+  }

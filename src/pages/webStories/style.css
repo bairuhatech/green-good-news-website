@@ -1,0 +1,194 @@
+.webStories-HeadTxt {
+  font-size: 18px;
+  font-family: "Noto_Sans_Medium_500" !important;
+  color: #0055a6;
+  padding-left: 12px;
+}
+.webStories-breadcums {
+  border: 1px solid #cbcbcb;
+}
+.webStories-scroll {
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+  overflow-y: hidden;
+  display: flex;
+  flex-direction: row;
+  white-space: nowrap;
+  margin-bottom: 10px;
+  width: 100%;
+  margin: 13%;
+}
+
+.webStories-scroll::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+}
+
+.webStories-scroll::-webkit-scrollbar-thumb {
+  background-color: gray;
+  border-radius: 9px;
+}
+.webStories-scrollBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  /* padding: 20px; */
+}
+.webStories-scrollbutton1 {
+  height: 45px;
+  width: 45px;
+  border-radius: 100%;
+  position: absolute;
+  /* // position: relative; */
+  left: 24px;
+  font-size: 30px;
+  /* // background-color: #e7e1e1; */
+  z-index: 10;
+  background-color: black;
+  border: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 7px;
+}
+.webStories-scrollbutton2 {
+  height: 45px;
+  width: 45px;
+  border-radius: 100%;
+  position: absolute;
+  right: 30px;
+  font-size: 50px;
+  background-color: black;
+  border: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 7px;
+}
+.webStories-image {
+  width: 248px;
+  height: 360px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 1s;
+  object-fit: cover;
+}
+.webStories-image:hover {
+  transform: scale(1.06);
+  border-radius: 8px;
+}
+
+.webStories-ImgDiv {
+  width: 248px;
+  height: 360px;
+  margin: 18px !important;
+  border-radius: 8px;
+  position: relative;
+  display: flex;
+  /* overflow: hidden; */
+}
+
+.webStories-description {
+  bottom: 10px;
+  position: absolute;
+  padding: 20px;
+  font-size: 14px;
+  font-family: "Noto_Sans_SemiBold_600" !important;
+  box-sizing: border-box;
+  color: white;
+  white-space: pre-wrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: center;
+}
+
+@media only screen and (max-width: 576px) {
+  .webStories-scrollbutton1 {
+    display: none !important;
+  }
+  .webStories-scrollbutton2 {
+    display: none !important;
+  }
+
+  .webStories-main {
+    display: none !important;
+  }
+}
+@media screen and (min-width: "576px") and (max-width: "991px") {
+  .webStories-scrollbutton1 {
+    display: none !important;
+  }
+  .webStories-scrollbutton2 {
+    display: none !important;
+  }
+}
+
+/* /////////////////////////////////// */
+.owlCarousal-backgroundDiv {
+  filter: blur(7px);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+  background: black;
+}
+.owlCarousal-bottomNav {
+  height: 100%;
+  position: relative;
+  margin-right: 13px;
+  display: flex;
+  flex-direction: column;
+}
+.owl-Carouasl-Image2 {
+  z-index: 12;
+  position: absolute;
+  left: 388px;
+  top: 50%;
+}
+.owl-Carouasl-Image1 {
+  z-index: 12;
+  position: absolute;
+  left: -60px;
+  top: 50%;
+}
+:where(.css-dev-only-do-not-override-fpg3f5).ant-carousel
+  .slick-list
+  .slick-slide.slick-active {
+  pointer-events: auto;
+  display: flex !important;
+  justify-content: center !important;
+}
+:where(.css-fpg3f5).ant-carousel .slick-list .slick-slide.slick-active {
+  pointer-events: auto;
+  display: flex !important;
+  justify-content: center !important;
+}
+.owlCuarousal-title {
+  position: absolute;
+  top: 80vh;
+  color: white;
+  font-weight: bolder;
+  width: 380px;
+  overflow: hidden;
+  text-align: center;
+  padding: 10px;
+}
+
+.owlCarousal-card {
+  width: 380px;
+  object-fit: cover;
+  border-radius: 8px;
+  height: 100vh;
+}
+.owlCaroual-imageCard {
+  object-fit: cover;
+  border-radius: 8px;
+  width: 100%;
+  height: 100%;
+}
+:where(.css-byeoj0).ant-carousel .slick-list .slick-slide.slick-active {
+  pointer-events: auto;
+  display: flex !important;
+  justify-content: center !important;
+}

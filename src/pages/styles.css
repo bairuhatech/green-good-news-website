@@ -1,0 +1,13 @@
+.loading-box {
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+  align-content: center;
+}
+.ant-skeleton-paragraph li {
+  list-style: none !important;
+}
+
+.component-Body {
+  user-select: none;
+}

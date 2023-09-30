@@ -1,0 +1,159 @@
+.inSnap-container {
+}
+
+
+
+
+
+.inSnap-Img2 {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.inSnapData-head {
+  font-family: "Noto_Sans_Bold_700" !important;
+  font-size: 32px;
+  width: 100%;
+  text-align: center;
+  padding-top: 20px;
+}
+.inSnapData-title {
+  font-family: "Noto_Sans_SemiBold_600" !important;
+  font-size: 18px;
+  width: 100%;
+  text-align: center;
+  line-height: 22px;
+  padding-top: 20px;
+}
+.inSnapDataLst-imgCard {
+  width: 320px;
+  height: 280px;
+  background: yellow;
+}
+.inSnap-imgCard3 {
+  width: 60%;
+  height: 317px;
+  border-radius: 8px;
+  padding: 10px;
+}
+.inSnap-imgCard4 {
+  width: 40%;
+  height: 317px;
+  border-radius: 8px;
+  padding: 10px;
+}
+.inSnap-Img3 {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+}
+.inSnap-imgCard5 {
+  width: 33.33%;
+  height: 317px;
+  border-radius: 8px;
+  padding: 10px;
+}
+.inSnap-imgCard6 {
+  width: 25%;
+  height: 192px;
+  border-radius: 8px;
+  padding: 10px;
+}
+//////---------InSnap-index----------//////
+.inSnap-Card {
+  width: 100%;
+  height: 520px;
+  // position: relative;
+}
+.inSnap-MainCard2 {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  border-radius: 8px;
+  // padding: 20px;
+}
+.inSnap-imgCard2 {
+  width: 100%;
+  height: 420px;
+  border-radius: 8px;
+  position: relative;
+  padding: 10px;
+}
+.inSnap-title {
+  font-family: "Noto_Sans_SemiBold_600" !important;
+  font-size: 18px;
+  position: absolute;
+  color: white;
+  padding: 26px;
+  bottom: 0;
+  position: absolute;
+  bottom: 0;
+}
+
+.inSnap-Img {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  object-fit: cover;
+  cursor: pointer;
+  // padding: 20px;
+}
+.inSnap-imgCard0{
+  width: 33.33%;
+  height: 316.58px;
+  padding: 10px;
+  position: relative;
+  cursor: pointer;
+}
+@media only screen and (max-width: 576px) {
+  .inSnapData-head {
+    font-size: 15px !important;
+   
+}
+.inSnapData-title {
+  font-size: 11px;
+
+  line-height: 18px;
+
+}
+.inSnap-imgCard5 {
+  width: 50%;
+  height: 177px;
+
+}
+
+  .inSnap-imgCard0{
+    width:50%;
+    height: 176px;
+    padding: 10px;
+    position: relative;
+    cursor: pointer;
+  }
+  .inSnap-imgCard2 {
+    width: 100%;
+    height: 304px;
+    border-radius: 8px;
+    position: relative;
+    padding: 10px;
+}
+.inSnap-imgCard4 {
+  width: 40%;
+  height: 177px;
+  border-radius: 8px;
+  padding: 10px;
+}
+.inSnap-imgCard3 {
+  width: 60%;
+  height: 177px;
+  border-radius: 8px;
+  padding: 10px;
+}
+.inSnap-imgCard6{
+    width: 50%;
+    height: 17px;
+
+  
+}
+}

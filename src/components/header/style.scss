@@ -1,0 +1,120 @@
+.header-MainCol2 {
+  height: 80px;
+  background-color: #ffffff;
+}
+
+.header-MenuIcon {
+  height: 80px;
+  display: flex;
+  align-items: center;
+}
+.fiMenuIcon {
+  width: 25px;
+  height: 25px;
+}
+
+.contactHeader {
+  cursor: pointer;
+  height: 20px;
+  width: 20px;
+}
+.header-dateDiv {
+  display: flex;
+  align-items: center;
+  height: 87px;
+  width: 83%;
+}
+.dateTime1 {
+  font-family: "Noto_Sans_SemiBold_600";
+  font-size: 24px;
+}
+.dateTime2 {
+  font-family: "Noto_Sans_Bold_700";
+  font-size: 10px;
+  white-space: nowrap;
+}
+.dateTime3 {
+  font-family: "Noto_Sans_Medium_500";
+  font-size: 10px;
+  white-space: nowrap;
+}
+.drawerBox {
+  width: 280px;
+  outline: none;
+  border: none;
+  padding: 0px;
+}
+.drawerSection1 {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
+}
+.categoryDrawerlink {
+  height: 100%;
+  text-decoration: none;
+  color: #363636;
+  height: 35px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-family: "Noto_Sans_Medium_500";
+  font-size: 14px;
+}
+.categoryDrawerlink a {
+  text-decoration: none;
+  color: black;
+}
+.privacyPolicyTxt {
+  font-family: "Noto_Sans_Regular_400";
+  font-size: 12px;
+  border-right: 2px solid #c3c3c3;
+  cursor: pointer;
+}
+.privacyPolicyTxt:hover {
+  color: #0055a6;
+}
+
+@media screen and (max-width: "576px") {
+  .header-Div1 {
+    padding: 0px 10px 0px 10px;
+  }
+  .fiMenuIcon {
+    width: 29px !important;
+    height: 29px !important;
+  }
+  .searchInputContainer {
+    width: 100%;
+    height: 100%;
+    margin-top: 1px !important;
+    justify-content: center;
+  }
+  .header-MainCol2Sub {
+    height: 120px;
+    background-color: #ffffff;
+  }
+}
+
+.searchInputContainer {
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  margin-top: 25px;
+}
+.searchInput {
+  height: 35px;
+  border-radius: 8px 0px 0px 8px;
+}
+.searchButton {
+  width: 45px;
+  height: 35px;
+  border-radius: 0px 8px 8px 0px;
+  border: none;
+  background-color: #0055a6;
+}
+@media screen and (min-width: "576px") and (max-width: "768") {
+  .searchInputContainer {
+    display: none !important;
+  }
+}

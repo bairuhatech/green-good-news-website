@@ -1,0 +1,410 @@
+.custom-table .ant-table-row {
+  height: 30px;
+  line-height: 18px;
+}
+.reel-actions {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 10px;
+}
+
+.reel-actions i {
+  cursor: pointer;
+  font-size: 24px;
+}
+.reel-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+  margin: 10px;
+  padding-bottom: 10px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.reel-card img {
+  object-fit: cover;
+  width: 100%;
+  height: 300px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.reel-card h4 {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  color: white;
+  font-weight: bold;
+  text-shadow: 0px 0px 5px black;
+}
+
+.reel-card .reel-description {
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: left;
+}
+.overlay-icons {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.overlay-icons i {
+  color: red;
+  font-size: 20px;
+  background: #e74c3c;
+  padding: 5px;
+  border-radius: 50%;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+
+.overlay-icons i:hover {
+  opacity: 0.8;
+}
+
+.overlay-icons .liked {
+  color: #ffff;
+}
+.action-count {
+  color: #ffff;
+  // font-size: 12px;
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.marquee {
+  display: flex;
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+}
+
+.marquee-text {
+  animation-duration: 50s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-name: marquee;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* src/components/BottomNavbar.css */
+
+.bottom-navbar {
+  display: none;
+}
+
+.nav-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 14px;
+  color: #999999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.active,
+.nav-item:hover {
+  color: blue;
+}
+
+@media screen and (max-width: "576px") {
+  .bottom-navbar {
+    display: block;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #ffffff;
+    border-top: 1px solid #e0e0e0;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+  }
+  .floating-icon {
+    position: fixed !important;
+    bottom: 60px !important;
+    right: 10px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+  }
+}
+
+.slick-dots li button:hover:before {
+  display: none !important;
+}
+
+.slick-dots li button:focus:before {
+  display: none !important;
+}
+.slick-dots li button:before {
+  display: none !important;
+}
+////////WHATSAPP FLOADTING ICON ////////////////
+.floating-icon {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.ActionModal-box1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.editorialProfile {
+  display: flex;
+  font-size: "10";
+  font-family: "Noto_Sans_Medium_500";
+}
+.editorialProfileImage {
+  border-radius: 50%;
+  object-fit: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  // height: 40px;
+}
+.author-editorial {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin-left: 10px !important;
+  font-size: 10px;
+}
+.newsItem-Row1 {
+  padding: 12px 16px 12px 16px;
+  height: 104px;
+  cursor: pointer;
+  transition: transform 1s;
+}
+.newsItem-Row1:hover {
+  transform: scale(1.05);
+}
+.newsItemTxt-Row1 {
+  padding: 12px 16px 12px 16px;
+  cursor: pointer;
+  transition: transform 1s;
+}
+.newsItemTxt-Row1:hover {
+  transform: scale(1.05);
+}
+.secondNewsItm-Row {
+  padding: 12px 16px 12px 16px;
+  cursor: pointer;
+  transition: transform 1s;
+}
+.secondNewsItm-Row:hover {
+  transform: scale(1.04);
+}
+.thirdNewsItem-Row {
+  padding: 12px 16px 12px 16px;
+  cursor: pointer;
+  transition: transform 1s;
+}
+.thirdNewsItem-Row:hover {
+  transform: scale(1.05);
+}
+.newsItem-Row1HeadTxt {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  // width: 80%;
+}
+.thirdNewsItem-Col2 {
+  padding-left: 14px;
+  // display: flex;
+  // flex-direction: column;
+  // padding-top: 15px;
+}
+.newsItem-image {
+  height: 80px;
+  width: 100%;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+.frstSctnCol3Img {
+  height: 120px;
+  width: 100%;
+  max-width: 160px;
+  border-radius: 5px;
+  object-fit: cover;
+}
+.thirdnewsItm-Row1HeadTxt {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+}
+.thrdNewsItm-Col3Txt {
+  // height: 70px;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.categoryName-Box {
+  width: 70%;
+  height: 16px;
+  background: #65b9e5;
+  border-radius: 0px 10px 10px 0px;
+  position: absolute;
+  bottom: 19px;
+  color: white;
+  font-size: 10px;
+  font-weight: 600;
+  display: grid;
+  place-items: center;
+}
+/////////////////// POLL VOTING CARD
+
+///////Polling Card Style Ends Here//////
+@media screen and (max-width: "576px") {
+  .frstSctnCol3Img {
+    height: 100%;
+  }
+  .thrdNewsItm-Col3Txt {
+    padding-top: 0px;
+  }
+  ////////////////////////////////////////////////HEADER////////////////////
+
+  .hearder-SearchIcon {
+    height: 80px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+  }
+}
+// .hearder-SearchIcon {
+//   height: 80px;
+//   display: flex;
+//   justify-content: end;
+//   align-items: center;
+// }
+
+.headerLogo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80px;
+}
+.suprabhathamLogo {
+  width: 200px !important;
+  height: 40px;
+  cursor: pointer;
+}
+
+///////SHARE MODAL/////////////
+.shareModal-Txt1 {
+  color: #121212;
+  font-size: 20px;
+  font-family: "Noto_Sans_Bold_700";
+  text-align: center;
+  margin-top: 20px;
+}
+.shareModal-MainDiv {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 40px 0px 40px 0px;
+  border-bottom: 2px solid #f2f2f2;
+}
+.shareModal-IconCrcle {
+  width: 50px;
+  height: 50px;
+  background-color: #f2f2f2;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+}
+.shareModal-ScndDiv {
+  display: flex;
+  padding: 30px 0px 0px 0px;
+  display: flex;
+  justify-content: space-around;
+}
+.sharemodal-scndDivicon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+
+.sharemodalTxt2 {
+  font-size: 15px;
+  font-family: "Noto_Sans_Bold_700";
+  margin-top: 10px;
+}
+
+///////////////////////////////////////////////////
+
+.cardScroll-bannerdiv {
+  width: 100%;
+  height: 100px;
+}
+.cardScroll-bannerImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+// Courency scss
+.corrency-Col {
+  height: 100%;
+  padding: 24px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+.corrency-head {
+  width: 100%;
+}
+.dateTime {
+  color: #d3d3d3;
+}
+.corrency-item {
+  width: 100%;
+  height: 50px;
+  border-bottom: 1px solid #d3d3d3;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 10px;
+}
+.corrency-item h6:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+.corrency-Txt {
+  font-size: 13px;
+  font-weight: 600;
+}

@@ -1,0 +1,18 @@
+.head-PrabhaadhamScreen{
+    width:100%
+}
+.PrabhaadhamScreenProfileImage {
+    border-radius: 50%;
+    object-fit: cover;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.authorDiv{
+    display: flex;
+
+}
+.AuthorName{
+    margin-left: 5px;
+    margin-top: 5px;
+}
