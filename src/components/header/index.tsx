@@ -24,8 +24,8 @@ import "./style.scss";
 import gql from "graphql-tag";
 import client from "../../Config/Graphql/apolloclient";
 import DrawerModal from "../../components/drawerModal/index";
- import Logo from "../../assets/Images/ggnlogogreen.svg";
- const moment = require('moment');
+import Logo from "../../assets/Images/ggnlogogreen.svg";
+const moment = require("moment");
 
 const Header = (props: any) => {
   const [show, setShow] = useState(false);
@@ -34,17 +34,18 @@ const Header = (props: any) => {
   const { Panel } = Collapse;
   const [currentTime, setCurrentTime] = useState(new Date());
 
-  const user = typeof window !== "undefined" &&
-  window.JSON.parse(localStorage.getItem("user"))
+  const user =
+    typeof window !== "undefined" &&
+    window.JSON.parse(localStorage.getItem("user"));
 
-  const handleProfileClick = () =>{
-    navigate("/profilescreen",{
-      state:{
-        item: user
+  const handleProfileClick = () => {
+    navigate("/profilescreen", {
+      state: {
+        item: user,
       },
     });
-  }
-  
+  };
+
   const date = moment();
 
   useEffect(() => {
@@ -79,9 +80,7 @@ const Header = (props: any) => {
     const SEARCH_QUERY = gql`
       query SearchNews($searchTitle: String) {
         news1: allNews(
-          filters: {
-            head: { contains: $searchTitle }
-          }
+          filters: { head: { contains: $searchTitle } }
           pagination: { page: 1, pageSize: 10000 }
           sort: "id:desc"
         ) {
@@ -103,16 +102,14 @@ const Header = (props: any) => {
             }
           }
         }
-        
+
         news2: allNews(
-          filters: {
-            user: { username: { contains: $searchTitle } }
-          }
+          filters: { user: { username: { contains: $searchTitle } } }
           pagination: { page: 1, pageSize: 10000 }
           sort: "id:desc"
         ) {
           data {
-            id 
+            id
             attributes {
               head
               title
@@ -129,11 +126,9 @@ const Header = (props: any) => {
             }
           }
         }
-        
+
         news3: allNews(
-          filters: {
-            body: { contains: $searchTitle }
-          }
+          filters: { body: { contains: $searchTitle } }
           pagination: { page: 1, pageSize: 10000 }
           sort: "id:desc"
         ) {
@@ -194,7 +189,7 @@ const Header = (props: any) => {
         setError(error.message);
         console.log("Error:", error.message);
       });
-  }
+  };
 
   const handleSearch = (value: any) => {
     loadData(value.searchInput);
@@ -265,13 +260,13 @@ const Header = (props: any) => {
                   style={{ height: "80px" }}
                 >
                   <>
-                    {/* <Col>
+                    <Col>
                       <div className="d-none d-md-block">
                         <Link to="https://www.youtube.com/@Suprabhaatham2023">
                           <Live style={{ width: "40px", height: "32px" }} />
                         </Link>
                       </div>
-                    </Col> */}
+                    </Col>
                     <Col>
                       <div className="d-none d-md-block">
                         <Link to="https://twitter.com/suprabhaatham?lang=en">
@@ -281,28 +276,19 @@ const Header = (props: any) => {
                     </Col>
                     <Col>
                       <div className="d-none d-md-block">
-                        <Link
-                         to="https://www.facebook.com/profile.php?id=61551093117515&mibextid=ZbWKwL"> 
-                         <Facebook style={{ width: "20px", height: "20px" }} />
-                  </Link>
+                        <Link to="https://www.facebook.com/profile.php?id=61551093117515&mibextid=ZbWKwL">
+                          <Facebook style={{ width: "20px", height: "20px" }} />
+                        </Link>
                       </div>
                     </Col>
                     <Col md={4} className="d-none d-lg-block">
-                      {/* {user != null ? (
-                        <div
-                          className="contactHeader "
-                          onClick={() => handleProfileClick()}
-                        >
-                          <Contact />
-                        </div>
-                      ) : (
-                        <div
-                          className="contactHeader "
-                          onClick={() => handleLoginClick()}
-                        >
-                          <Contact />
-                        </div>
-                      )} */}
+                      <div className="d-none d-md-block">
+                        <Link to="https://instagram.com/greengoodnews_?igshid=MzRlODBiNWFlZA==">
+                          <Instagram
+                            style={{ width: "20px", height: "20px" }}
+                          />
+                        </Link>
+                      </div>
                     </Col>
                     <Col
                       onClick={() => setSearch(!search)}
