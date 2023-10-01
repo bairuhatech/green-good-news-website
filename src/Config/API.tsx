@@ -1,8 +1,8 @@
 export const API = {
-  APP_URL: "https://master.drgzw4c7k54cf.amplifyapp.com",
+  APP_URL: "https://www.greengoodnews.com",
   // APP_URL: "http://localhost:8000",
   // BASE_URL: "https://suprabhaatham-dev.herokuapp.com/api/",
-  // BASE_URL: "https://green-good-news-server-9a460dab0f63.herokuapp.com/api/",
+  BASE_URL: "https://green-good-news-server-9a460dab0f63.herokuapp.com/api/",
   LOGIN: "auth/local",
   ADD_LIKE: "addLike/",
   COMMENT: "comments",
